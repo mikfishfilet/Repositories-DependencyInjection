@@ -1,0 +1,57 @@
+﻿
+@page
+@model MicroBlog.Pages.CreateModel
+
+@{
+    ViewData["Title"] = "Create Post";
+}
+
+<div class="container mt-4">
+    <h1>Create a New Post</h1>
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"
+             class="text-danger"></div>
+
+        <div class="mb-3">
+            <label asp-for="Post.Title"
+                   class="form-label">
+                Title
+            </label>
+
+            <input asp-for="Post.Title"
+                   class="form-control" />
+
+            <span asp-validation-for="Post.Title"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Post.Body"
+                   class="form-label">
+                Body
+            </label>
+
+            <textarea asp-for="Post.Body"
+                      class="form-control"
+                      rows="8"></textarea>
+
+            <span asp-validation-for="Post.Body"
+                  class="text-danger"></span>
+        </div>
+
+        <button type="submit"
+                class="btn btn-primary">
+            Publish Post
+        </button>
+
+        <a asp-page="/Index"
+           class="btn btn-secondary">
+            Cancel
+        </a>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
