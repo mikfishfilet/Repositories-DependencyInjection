@@ -35,6 +35,10 @@ The application can use either a JSON file or an in-memory list to store blog po
 - Dependency Injection
 - Repository Pattern
 
+##PHOTOS
+<img width="317" height="529" alt="image" src="https://github.com/user-attachments/assets/c23834a2-ce71-404b-be82-9731cae9891d" />
+
+
 ## Project Structure
 
 ```text
@@ -65,7 +69,5 @@ MicroBlog/
 └── README.md
 
 
-##PHOTOS
-<img width="317" height="529" alt="image" src="https://github.com/user-attachments/assets/c23834a2-ce71-404b-be82-9731cae9891d" />
 
 
